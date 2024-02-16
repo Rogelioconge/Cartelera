@@ -1,74 +1,82 @@
-body{
-background-color: black;
-color: aliceblue;
-font-size: x-large;
-justify-content: center;
-align-items: center;
-margin: 0 auto;
+body {
+    background-color: black;
+    color: aliceblue;
+    font-size: x-large;
+    align-items: center;
+    margin: 0 auto;
 
 }
 
 
-.principal{
-background-color: beige;
-text-align: center;
-align-items: center;
-font-size: xx-large;
-color: black;
-border-radius: 50px;
+.principal {
+    background-color: beige;
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+    color: black;
+    border-radius: 50px;
 }
 
 
-.secundaria{
-background-color: beige;
-text-align: center;
-align-items: center;
-font-size: medium;
-color: black;
-border-radius: 20px;
-display: flex;
-justify-content: center;
-width: 1100px;
-margin: 0 auto;
-margin-top: 20px;
+.secundaria {
+    background-color: beige;
+    text-align: center;
+    align-items: center;
+    font-size: medium;
+    color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 
-.imagenes{
+.imagenes {
     width: 250px;
-    height: auto; 
+    height: auto;
     margin: 10px;
     border-radius: 20px;
     box-shadow: inset;
-    transition: transform 0.3s ease; /* Transición para animación */
+    transition: transform 0.3s ease;
+    /* Transición para animación */
 }
 
 
 .cartelera {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    grid-gap: 10px; /* Espacio entre las imágenes */
-    justify-content: center; /* Centrar el contenido horizontalmente */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas iguales */
+    grid-gap: 10px;
+    /* Espacio entre las imágenes */
+    justify-content: center;
+    /* Centrar el contenido horizontalmente */
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
 .imagenes:hover {
-    transform: scale(1.1); /* Escalar la imagen al pasar el cursor sobre ella */
+    transform: scale(1.1);
+    /* Escalar la imagen al pasar el cursor sobre ella */
 }
 
 
 .pelicula {
-    border: 1px solid #ccc; /* Marco alrededor de la película */
-    border-radius: 20px; /* Bordes redondeados */
-    padding: 10px; 
-    background-color: #f9f9f9; 
-    transition: transform 0.3s ease; /* Transición para animación */
+    border: 1px solid #ccc;
+    /* Marco alrededor de la película */
+    border-radius: 20px;
+    /* Bordes redondeados */
+    padding: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+    /* Transición para animación */
 }
 
 .pelicula:hover {
-    transform: scale(1.04); /* Escalar la película al pasar el cursor sobre ella */
+    transform: scale(1.04);
+    /* Escalar la película al pasar el cursor sobre ella */
 }
 
 .info {
@@ -90,4 +98,37 @@ margin-top: 20px;
 
 .info ul li {
     margin: 5px 0;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de cerrar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
